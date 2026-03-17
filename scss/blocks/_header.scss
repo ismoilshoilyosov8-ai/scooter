@@ -1,0 +1,382 @@
+.header {
+  width: 100%;
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1110;
+    background-color: $white;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @include df-row-between-center;
+  }
+  
+  .container{
+    max-width: 100%;
+  }
+
+  &__test-button {
+    display: none;
+    opacity: 0;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  &__test-button-image {
+    width: 20px;
+    height: 16px;
+  }
+
+  &__left-box {
+    @include df-row-center-center;
+    gap: 58px;
+  }
+
+  &__logo-link {
+    transition: 200ms ease all;
+    &:active {
+      transition: 200ms ease all;
+      opacity: 0.5;
+    }
+  }
+
+  &__list {
+    @include df-row-center-center;
+    gap: 32px;
+  }
+
+  &__links-text {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $dim__grey;
+  }
+
+  &__button {
+    @include template__button;
+    display: block;
+  }
+
+  &__mb-buttons-box {
+    display: none;
+  }
+
+  &__mb-open-burger-button {
+    display: block;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  &__mb-open-burger-icon {
+    width: 20px;
+    height: 16px;
+  }
+
+  &__mb-close-burger-button {
+    display: none;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  &__mb-close-burger-icon {
+    width: 20px;
+    height: 16px;
+  }
+
+  &__mb-div {
+    display: none;
+    transition: 500ms ease all;
+    z-index: -1;
+    width: 100%;
+    height: 100dvh;
+    top: 73px;
+    position: fixed;
+    transform: translateX(-100%);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &__mb-div.active {
+    transform: translateX(0%);
+    transition: 500ms ease all;
+  }
+
+  &__mb-nav {
+    @include df-column-between-start;
+    background-color: $second__dark-navy;
+    width: 80%;
+    height: 100dvh;
+    padding: 64px 32px 102px 32px;
+  }
+
+  &__mb-list {
+    @include df-column-start-start;
+    gap: 24px;
+  }
+
+  &__mb-link-texts {
+    font-family: "Space Mono";
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: $white;
+  }
+
+  &__mb-button {
+    @include template__button;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    &__container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1110;
+      background-color: $white;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 40px;
+      padding-right: 40px;
+      @include df-row-between-center;
+    }
+
+    &__test-button {
+      display: none;
+      opacity: 0;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__test-button-image {
+      width: 20px;
+      height: 16px;
+    }
+
+    &__left-box {
+      @include df-row-center-center;
+      gap: 58px;
+    }
+
+    &__list {
+      @include df-row-center-center;
+      gap: 32px;
+    }
+
+    &__links-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $dim__grey;
+    }
+
+    &__button {
+      display: block;
+      @include template__button;
+    }
+
+    &__mb-buttons-box {
+      display: none;
+    }
+
+    &__mb-open-burger-button {
+      display: block;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__mb-open-burger-icon {
+      width: 20px;
+      height: 16px;
+    }
+
+    &__mb-close-burger-button {
+      display: none;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__mb-close-burger-icon {
+      width: 20px;
+      height: 16px;
+    }
+
+    &__mb-div {
+      display: none;
+      transition: 500ms ease all;
+      z-index: -1;
+      width: 100%;
+      height: 100dvh;
+      top: 73px;
+      position: fixed;
+      transform: translateX(-100%);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__mb-div.active {
+      transform: translateX(0%);
+      transition: 500ms ease all;
+    }
+
+    &__mb-nav {
+      @include df-column-between-start;
+      background-color: $second__dark-navy;
+      width: 80%;
+      height: 100dvh;
+      padding: 64px 32px 102px 32px;
+    }
+
+    &__mb-list {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+
+    &__mb-link-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $white;
+    }
+
+    &__mb-button {
+      @include template__button;
+    }
+  }
+}
+@media (max-width: 766px) {
+  .header {
+    &__container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1110;
+      background-color: $white;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 40px;
+      padding-right: 40px;
+      @include df-row-reverse-between-center;
+    }
+
+    &__test-button {
+      display: block;
+      opacity: 0;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__test-button-image {
+      width: 20px;
+      height: 16px;
+    }
+
+    &__logo-link {
+      transition: 200ms ease all;
+      &:active {
+        transition: 200ms ease all;
+        opacity: 0.5;
+      }
+    }
+
+    &__logo-image {
+      width: 75.5px;
+      height: 20px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__links-text {
+      font-family: "Space Mono";
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__mb-buttons-box {
+      display: block;
+    }
+
+    &__mb-open-burger-button {
+      display: block;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__mb-open-burger-icon {
+      width: 20px;
+      height: 16px;
+    }
+
+    &__mb-close-burger-button {
+      display: none;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__mb-close-burger-icon {
+      width: 20px;
+      height: 16px;
+    }
+
+    &__mb-div {
+      display: block;
+      transition: 500ms ease all;
+      z-index: 1111;
+      width: 100%;
+      height: 100dvh;
+      top: 73px;
+      position: fixed;
+      transform: translateX(-100%);
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__mb-div.active {
+      transform: translateX(0%);
+      transition: 500ms ease all;
+    }
+
+    &__mb-nav {
+      @include df-column-between-start;
+      background-color: $second__dark-navy;
+      width: 80%;
+      height: 100dvh;
+      padding: 64px 32px 102px 32px;
+    }
+
+    &__mb-list {
+      @include df-column-start-start;
+      gap: 24px;
+    }
+
+    &__mb-link-texts {
+      font-family: "Space Mono";
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      color: $white;
+    }
+
+    &__mb-button {
+      @include template__button;
+    }
+  }
+}
