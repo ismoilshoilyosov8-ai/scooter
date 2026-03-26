@@ -15,7 +15,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Home</title>
+    <title>Location</title>
   </head>
   <body>
     <header class="header">
@@ -28,7 +28,7 @@
           />
         </button>
         <div class="header__left-box">
-          <a class="header__logo-link" href="#">
+          <a class="header__logo-link" href="./index.html">
             <img
               class="header-logo-image"
               src="./images/scoot.png"
@@ -42,8 +42,8 @@
               >
             </li>
             <li class="header__lists">
-              <a class="header__link" href="./location.html"
-                ><p class="header__links-text">Location</p></a
+              <a class="header__link" href="#"
+                ><p class="header__links-text online">Location</p></a
               >
             </li>
             <li class="header__lists">
@@ -78,8 +78,8 @@
               <a class="header__mb-links" href="./about.html">
                 <p class="header__mb-link-texts">About</p>
               </a>
-              <a class="header__mb-links" href="./location.html">
-                <p class="header__mb-link-texts">Location</p>
+              <a class="header__mb-links" href="#">
+                <p class="header__mb-link-texts online">Location</p>
               </a>
               <a class="header__mb-links" href="./careers.html">
                 <p class="header__mb-link-texts">Careere</p>
@@ -91,106 +91,35 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="hero__left-box">
-            <h2 class="hero__title">Scooter sharing made simple</h2>
-            <div class="hero__mini-box">
-              <p class="hero__text">
-                Scoot takes the hassle out of urban mobility. Our bikes are
-                placed in convenient locations in each of our cities. Use our
-                app to locate the nearest bike, unlock it with a tap, and you’re
-                away!
-              </p>
-              <button class="hero__btn">get scootin</button>
+      <section class="location">
+        <div class="container location__container">
+          <h2 class="location__title">Location</h2>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container map__container">
+          <div class="map__box">
+            <img class="map__images" src="./images/map.jpg" alt="" />
+            <img class="map__images-tb" src="./images/tb__map.jpg" alt="" />
+            <img class="map__images-mb" src="./images/mb__map.jpg" alt="" />
+            <div class="map__boxes">
+              <h5 class="map__texts">New York</h5>
+              <h5 class="map__texts">London</h5>
+              <h5 class="map__texts">Jakarta</h5>
+              <h5 class="map__texts">Yokohama</h5>
             </div>
           </div>
         </div>
       </section>
-      <section class="category">
-        <div class="container category__container">
-          <div class="category__boxes">
-            <img class="category__icon" src="./icons/Location.svg" alt="" />
-            <div class="category__mini-boxes">
-              <h5 class="category__mini-boxes-title">Locate with app</h5>
-              <p class="category__mini-boxes-text">
-                Use the app to find the nearest scooter to you. We are
-                continuously placing scooters in the areas with most demand, so
-                one should never be too far away.
-              </p>
-            </div>
-          </div>
-          <div class="category__boxes">
-            <img
-              class="category__icon"
-              src="./icons/your__scooter.png"
-              alt=""
-            />
-            <div class="category__mini-boxes">
-              <h5 class="category__mini-boxes-title">Pick your scooter</h5>
-              <p class="category__mini-boxes-text">
-                We show the most important info for the scooters closest to you.
-                So you know how much charge they have left and can see roughly
-                how much it will cost.
-              </p>
-            </div>
-          </div>
-          <div class="category__boxes">
-            <img class="category__icon" src="./icons/the__ride.png" alt="" />
-            <div class="category__mini-boxes">
-              <h5 class="category__mini-boxes-title">Enjoy the ride</h5>
-              <p class="category__mini-boxes-text">
-                Scan the QR code and the bike will unlock. Retract the cable
-                lock, put on a helmet, and you’re off! Always lock bikes away
-                from walkways and accessibility ramps.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="easy">
-        <div class="container easy__container">
-          <div class="easy__left-box">
-            <h2 class="easy__title">Easy to use riding telemetry</h2>
-            <p class="easy__text">
-              The Scoot app is available with riding telemetry. This means it
-              can show you your average speed, how long you've been using the
-              scooter, your traveling distance, and many more things all in an
-              easy to use app.
-            </p>
-            <button class="easy__button">Lear more</button>
-          </div>
-          <img class="easy__img" src="./images/easy__photo.jpg" alt="" />
-        </div>
-      </section>
-      <section class="city">
-        <div class="container city__container">
-          <div class="city__right-box">
-            <h2 class="city__title">Coming to a city near you</h2>
-            <p class="city__text">
-              Scoot is available in 4 major cities so far. We’re expanding
-              rapidly, so be sure to let us know if you want to see us in your
-              hometown. We’re aiming to let our scooters loose on 23 cities over
-              the coming year.
-            </p>
-            <button class="city__button">Lear more</button>
-          </div>
-          <img class="city__img" src="./images/city__photo.jpg" alt="" />
-        </div>
-      </section>
-      <section class="payment">
-        <div class="container payment__container">
-          <div class="payment__left-box">
-            <h2 class="payment__title">Zero hassle payments</h2>
-            <p class="payment__text">
-              Our payment is as easy as one two three. We accept most credit
-              cards and debit cards. You can also link your PayPal account
-              inside the app. Need to pay later? No worries! You can defer
-              payment for up to a month.
-            </p>
-            <button class="payment__button">Lear more</button>
-          </div>
-          <img class="payment__img" src="./images/payment__photo.jpg" alt="" />
+      <section class="listed">
+        <div class="container listed__container">
+          <h3 class="listed__title">Your City Not Listed?</h3>
+          <p class="listed__text">
+            If you’d like to see Scoot in your hometown, be sure to let us know.
+            We track requests and plan launches based on demand. Feel free to
+            message us by clicking the link or messaging us on social.
+          </p>
+          <button class="listed__btn">Message Us</button>
         </div>
       </section>
       <section class="sign">
@@ -220,7 +149,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__left-box">
-          <a href="#">
+          <a href="./index.html">
             <img
               width="107"
               height="28"
@@ -235,8 +164,8 @@
               </a>
             </li>
             <li class="footer__li">
-              <a class="footer__li-a" href="./location.html">
-                <p class="footer__a-text">Location</p>
+              <a class="footer__li-a" href="#">
+                <p class="footer__a-text online">Location</p>
               </a>
             </li>
             <li class="footer__li">
@@ -271,6 +200,5 @@
         </div>
       </div>
     </footer>
-    <script src="./main.js"></script>
   </body>
 </html>

@@ -1,0 +1,140 @@
+.our {
+  margin-top: 100px;
+  &__container {
+    @include df-column-center-center;
+  }
+  &__box {
+    @include df-row-between-center;
+    gap: 80px;
+    margin-top: 50px;
+  }
+  &__title {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    text-align: center;
+  }
+  &__boxes {
+    @include df-column-center-center;
+    gap: 20px;
+  }
+  &__img {
+    width: 330px;
+    height: 330px;
+  }
+  &__boxes-title {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    text-align: center;
+    color: $dark__navy;
+  }
+  &__boxes-text {
+    width: 350px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: $dim__grey;
+  }
+}
+@media (max-width: 1024px) {
+  .our {
+    margin-top: 100px;
+    &__container {
+      @include df-column-center-center;
+    }
+    &__box {
+      @include df-column-center-center;
+      gap: 50px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.43px;
+      text-align: center;
+    }
+    &__boxes {
+      @include df-column-center-center;
+      gap: 20px;
+    }
+    &__img {
+      width: 350px;
+      height: 350px;
+    }
+    &__boxes-title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+      color: $dark__navy;
+    }
+    &__boxes-text {
+      width: 457px;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: $dim__grey;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .our {
+    margin-top: 100px;
+    &__container {
+      @include df-column-center-center;
+    }
+    &__box {
+      @include df-column-center-center;
+      gap: 50px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.43px;
+      text-align: center;
+    }
+    &__boxes {
+      @include df-column-center-center;
+      gap: 20px;
+    }
+    &__img {
+      width: 260px;
+      height: 300px;
+    }
+    &__boxes-title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+      color: $dark__navy;
+    }
+    &__boxes-text {
+      width: 311px;
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: $dim__grey;
+    }
+  }
+}

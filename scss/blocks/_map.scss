@@ -1,0 +1,113 @@
+.map {
+    margin-top: 70px;
+    &__container {
+      @include df-column-center-center;
+    }
+    &__images {
+      width: 100%;
+      display: block;
+    }
+    &__images-tb {
+      width: 100%;
+      display: none;
+    }
+    &__images-mb {
+      width: 100%;
+      display: none;
+    }
+    &__boxes {
+      margin-top: 35px;
+      display: none;
+      @include df-column-center-center;
+      gap: 15px;
+    }
+    &__texts {
+      display: none;
+      width: 100%;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+      background-color: $light__yellow;
+    }
+  }
+@media (max-width: 1024px) {
+  .map {
+    margin-top: 70px;
+    &__container {
+      @include df-column-center-center;
+    }
+    &__images {
+      width: 100%;
+      display: none;
+    }
+    &__images-tb {
+      width: 100%;
+      display: block;
+    }
+    &__images-mb {
+      width: 100%;
+      display: none;
+    }
+    &__boxes {
+      margin-top: 35px;
+      display: none;
+      @include df-column-center-center;
+      gap: 15px;
+    }
+    &__texts {
+      display: none;
+      width: 100%;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+      background-color: $light__yellow;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .map {
+    margin-top: 70px;
+    &__container {
+      @include df-column-center-center;
+    }
+    &__images {
+      width: 100%;
+      display: none;
+    }
+    &__images-tb {
+      width: 100%;
+      display: none;
+    }
+    &__images-mb {
+      width: 100%;
+      display: block;
+    }
+    &__boxes {
+      margin-top: 35px;
+      @include df-column-center-center;
+      gap: 15px;
+    }
+    &__texts {
+      width: 100%;
+      padding-top: 22px;
+      padding-bottom: 22px;
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+      background-color: $light__yellow;
+    }
+  }
+}

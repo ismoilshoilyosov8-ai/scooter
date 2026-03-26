@@ -1,0 +1,120 @@
+.sign {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 998px;
+    height: 158px;
+    background-image: url("../../icons/triple__circle.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  margin-top: 100px;
+  background-color: $dark__navy;
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include df-row-between-center;
+    gap: 40px;
+  }
+  &__store {
+    @include df-row-center-center;
+    gap: 12px;
+  }
+  &__title {
+    width: 457px;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: $white;
+  }
+  &__store-icon {
+    width: 113px;
+    height: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .sign {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      height: 158px;
+      background-image: url("../../icons/triple__tb-circle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    margin-top: 100px;
+    background-color: $dark__navy;
+    &__container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      @include df-column-center-center;
+      gap: 40px;
+    }
+    &__store {
+      @include df-row-center-center;
+      gap: 12px;
+    }
+    &__title {
+      width: 457px;
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14px;
+      text-align: center;
+      color: $white;
+    }
+    &__store-icon {
+      width: 113px;
+      height: 40px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .sign {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      height: 181px;
+      background-image: url("../../icons/mb__circle.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    margin-top: 100px;
+    background-color: $dark__navy;
+    &__container {
+      padding-top: 88px;
+      padding-bottom: 88px;
+      @include df-column-center-center;
+      gap: 40px;
+    }
+    &__store {
+      @include df-row-center-center;
+      gap: 12px;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: -1.43px;
+      text-align: center;
+      color: $white;
+    }
+    &__store-icon {
+      width: 113px;
+      height: 40px;
+    }
+  }
+}

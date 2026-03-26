@@ -1,0 +1,114 @@
+.apply {
+  margin-top: 100px;
+  &__container {
+    gap: 20px;
+  }
+  &__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: $snow;
+    @include df-row-between-center;
+  }
+  &__boxes {
+    @include df-column-center-start;
+  }
+  &__title {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    text-align: center;
+  }
+  &__text {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  &__button {
+    width: auto;
+    @include template__button;
+  }
+}
+@media (max-width: 1024px) {
+  .apply {
+    margin-top: 100px;
+    &__container {
+      gap: 20px;
+    }
+    &__box {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color: $snow;
+      @include df-row-between-center;
+    }
+    &__boxes {
+      @include df-column-center-start;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+    }
+    &__text {
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &__button {
+      width: auto;
+      @include template__button;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .apply {
+    margin-top: 100px;
+    &__container {
+      gap: 20px;
+    }
+    &__box {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: $snow;
+      @include df-column-center-center;
+    }
+    &__boxes {
+      @include df-column-center-center;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -1.07px;
+      text-align: center;
+    }
+    &__text {
+      font-family: "Lexend Deca";
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &__button {
+      width: 250px;
+      @include template__button;
+      margin-top: 20px;
+    }
+  }
+}

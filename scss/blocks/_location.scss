@@ -1,0 +1,67 @@
+.location {
+  margin-top: 101px;
+  width: 100%;
+  background-image: url("../../images/careers__backimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    @include df-row-start-center;
+  }
+  &__title {
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: $white;
+  }
+}
+@media (max-width: 1024px) {
+  .location {
+    margin-top: 101px;
+    width: 100%;
+    background-image: url("../../images/careers__tb-backimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      @include df-row-start-center;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -2.5px;
+      color: $white;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .location {
+    margin-top: 68px;
+    width: 100%;
+    background-image: url("../../images/careers__mb-backimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      @include df-row-center-center;
+    }
+    &__title {
+      font-family: "Space Mono";
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -2.5px;
+      color: $white;
+    }
+  }
+}
